@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/toobar"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAccent"
+                android:theme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingRight="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_medium_10">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="@dimen/padding_large_15"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_recyclerview"
+                android:padding="@dimen/padding_small_5">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/continuetn"
+                android:layout_below="@+id/pass"
+                android:text="@string/continue_tag"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_green_login"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/padding_large_15"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"/>
+        </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_small_5"
+    android:id="@+id/address_layout"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:background="@drawable/rounded_corner_black"
+    android:paddingRight="@dimen/padding_medium_10"
+    android:paddingLeft="@dimen/padding_medium_10"
+    android:layout_margin="@dimen/padding_small_5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fulladdress"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fullname"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_no"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fulladdress"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:id="@+id/imageselect"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

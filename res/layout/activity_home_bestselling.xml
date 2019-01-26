@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:id="@+id/cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/padding_small_5"
+    android:layout_margin="@dimen/padding_small_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal_8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/prod_img"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Shampoo"
+                android:layout_marginRight="@dimen/padding_medium_10"
+                android:id="@+id/pro_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/more"
+                android:textStyle="bold"
+                android:textSize="15sp"
+
+                android:padding="@dimen/padding_small_5"
+                android:layout_marginTop="@dimen/padding_small_5"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/more"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baseline_more_vert_black_18"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginRight="@dimen/padding_small_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/old_price"
+                android:text="5 USD"
+                android:gravity="center"
+                android:layout_below="@id/pro_name"
+                android:padding="@dimen/padding_small_5"
+                android:background="@drawable/strike_line"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/layout_rel"
+                android:layout_marginBottom="@dimen/padding_medium_10"
+                android:layout_marginTop="@dimen/padding_medium_10"
+                android:layout_marginRight="@dimen/padding_medium_10"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_rel"
+                android:layout_below="@+id/prod_name"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_price"
+                    android:text="3 USD"
+                    android:gravity="right"
+                    android:textColor="@color/light_gold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/padding_small_5"
+                    android:layout_marginRight="@dimen/padding_medium_10"/>
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prod_rating"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="3"
+                    style="@style/ratingbarsmall"
+                    android:layout_alignParentLeft="true"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

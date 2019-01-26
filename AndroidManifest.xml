@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.shoppingapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.SignUp" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".login.SignIn" />
+        <activity android:name=".login.ForgetPassword" />
+        <activity android:name=".Home.home"></activity>
+        <activity android:name=".login.OTP_verify"></activity>
+        <activity android:name=".login.New_Password"></activity>
+        <activity android:name=".ProductPreview.productDetails"/>
+        <activity android:name=".Wishlist.WishlistDetails"></activity>
+        <activity android:name=".cart.CartDetails"/>
+        <activity android:name=".cart.Order_Summary"/>
+        <activity android:name=".cart.OrderAddress"/>
+        <activity android:name=".cart.OrderAddress_AddNew"/>
+        <activity android:name=".cart.PlaceOrder"></activity>
+        <activity android:name=".myaccount.myaccount"/>
+        <activity android:name=".myaccount.OrderHistory"/>
+        <activity android:name=".myaccount.OrderHistory_ViewDetails"/>
+
+        <meta-data android:name="instamojo.orderauth.url"
+            android:value="https://abirdas33.000webhostapp.com/Payment/access_token.php"
+            />
+    </application>
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+</manifest>
